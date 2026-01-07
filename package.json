@@ -1,0 +1,11 @@
+{
+	"name": "smetamaker",
+	"scripts": {
+		"dev": "concurrently \"pnpm -F frontend dev\" \"pnpm -F backend dev\"",
+		"deploy": "bash scripts/deploy-production.sh"
+	},
+	"packageManager": "pnpm@10.14.0",
+	"devDependencies": {
+		"concurrently": "^9.2.1"
+	}
+}

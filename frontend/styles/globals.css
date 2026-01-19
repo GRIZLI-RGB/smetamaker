@@ -1,1 +1,16 @@
 @import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+	--font-sans: "Geist", "Geist Fallback";
+	--font-mono: "Geist Mono", "Geist Mono Fallback";
+}
+
+@layer base {
+	input[type="button"],
+	button,
+	a {
+		cursor: pointer;
+	}
+}

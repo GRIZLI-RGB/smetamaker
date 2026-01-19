@@ -6,6 +6,7 @@ import { httpBatchLink } from "@trpc/react-query";
 import SuperJSON from "superjson";
 
 import { trpc } from "@/lib/trpc";
+import { SettingsProvider, SubscriptionProvider } from "@/lib/context";
 
 export default function ClientProviders({
 	children,
@@ -23,13 +24,15 @@ export default function ClientProviders({
 						fetch(url, { ...options, credentials: "include" }),
 				}),
 			],
-		})
+		}),
 	);
 
 	return (
 		<trpc.Provider client={trpcClient} queryClient={queryClient}>
 			<QueryClientProvider client={queryClient}>
-				{children}
+				<SubscriptionProvider>
+					<SettingsProvider>{children}</SettingsProvider>
+				</SubscriptionProvider>
 			</QueryClientProvider>
 		</trpc.Provider>
 	);

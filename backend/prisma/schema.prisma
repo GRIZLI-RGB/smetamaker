@@ -9,6 +9,7 @@ generator client {
 
 model User {
   id       String    @id @default(uuid())
+  email    String    @unique
   sessions Session[]
 }
 
@@ -18,4 +19,13 @@ model Session {
   createdAt DateTime @default(now())
   expiresAt DateTime
   user      User     @relation(fields: [userId], references: [id])
+}
+
+model MagicLinkToken {
+  id        String   @id @default(uuid())
+  tokenHash String   @unique
+  email     String
+  used      Boolean  @default(false)
+  expiresAt DateTime
+  createdAt DateTime @default(now())
 }

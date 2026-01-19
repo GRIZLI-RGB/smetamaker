@@ -10,9 +10,12 @@ export async function createContext({
 	req: FastifyRequest;
 	res: FastifyReply;
 }) {
+	const locale = req.cookies?.locale || "en";
+
 	return {
 		req,
 		res,
+		locale,
 		prisma,
 	};
 }

@@ -1,1 +1,163 @@
-{}
+{
+	"metadata": {
+		"title": "Smetamaker — professional project estimates in 5 minutes",
+		"description": "Smetamaker helps freelancers and small teams quickly create professional project estimates from project requirements: stages, hours, and pricing. The first estimate is free.",
+		"keywords": "project estimate, cost estimation, freelance estimate, software project estimation, website cost estimate, app cost estimate, AI estimation tool"
+	},
+	"app": {
+		"modals": {
+			"auth": {
+				"signIn": "Sign in",
+				"signInComingSoon": "Sign in will be available after your first estimate",
+				"signInTitle": "Sign in to Smetamaker",
+				"signInDescription": "Sign in will be available after your first estimate. This will allow you to save, export, and share estimates.",
+				"continueWithGoogle": "Continue with Google",
+				"emailMagicLink": "Email magic link",
+				"signInNote": "Authentication is not available yet. Create your first estimate to unlock this feature.",
+				"enterEmail": "Enter your email",
+				"emailPlaceholder": "you@example.com",
+				"sendMagicLink": "Send magic link",
+				"sending": "Sending...",
+				"checkEmail": "Check your inbox",
+				"magicLinkSent": "We sent a sign-in link to",
+				"openEmail": "Open email app",
+				"backToSignIn": "Back to sign in",
+				"signingIn": "Signing in..."
+			}
+		},
+		"header": {
+			"signIn": "Sign in",
+			"links": {
+				"howItWorks": "How it works",
+				"prices": "Prices",
+				"faq": "FAQ"
+			}
+		},
+		"hero": {
+			"heroTitle": "Professional estimate in 5 minutes",
+			"heroSubtitle": "For freelance developers",
+			"freeEstimate": "1 free estimate",
+			"specificationLabel": "Technical specification",
+			"specificationPlaceholder": "Paste specification text or describe the task...\n\nFor example:\n• Develop iOS mobile app\n• Payment system integration\n• User dashboard...",
+			"uploadFile": "Upload file (PDF, DOCX)",
+			"uploadHint": "Or drag and drop file here",
+			"calculate": "Calculate estimate",
+			"heroFooter": "No registration · Result in 5 minutes · First estimate free",
+			"charactersLeft": "characters left",
+			"limitReached": "Character limit reached"
+		},
+		"result": {
+			"resultTitle": "Your estimate is ready",
+			"resultSubtitle": "We analyzed the task and prepared a detailed estimate",
+			"stage": "Stage",
+			"hours": "Hours",
+			"rate": "Rate",
+			"cost": "Cost",
+			"analysis": "Analysis and Design",
+			"backend": "Backend Development",
+			"frontend": "Frontend Development",
+			"integration": "Integration and Testing",
+			"deployment": "Deployment and Documentation",
+			"total": "Total",
+			"perHour": "$/hour",
+			"editEstimate": "Edit estimate",
+			"downloadPDF": "Download PDF",
+			"newEstimate": "New estimate",
+			"editMode": "Edit mode",
+			"exitEditMode": "Done",
+			"saveChanges": "Save changes",
+			"discardChanges": "Discard",
+			"editingTip": "Click on a cell to edit",
+			"changesSaved": "Changes saved",
+			"shareEstimate": "Share",
+			"removeWatermark": "Remove watermark"
+		},
+		"settings": {
+			"settings": "Settings",
+			"settingsTitle": "Estimate settings",
+			"settingsSubtitle": "Settings affect all calculations in the estimate",
+			"hourlyRate": "Hourly rate",
+			"currency": "Currency",
+			"currencyRUB": "Russian Ruble",
+			"currencyUSD": "US Dollar",
+			"currencyEUR": "Euro",
+			"currencyGBP": "British Pound",
+			"riskBuffer": "Risk buffer",
+			"riskBufferHint": "Added to total cost to cover unexpected expenses",
+			"taxMode": "Tax mode",
+			"vatIncluded": "VAT included",
+			"vatNotIncluded": "No VAT",
+			"vatRate": "VAT rate",
+			"applySettings": "Apply settings",
+			"settingsSaved": "Settings saved",
+			"resetToDefault": "Reset"
+		},
+		"info": {
+			"infoTitle": "Who is Smetamaker for?",
+			"infoSubtitle": "For freelance developers who want to save time and look professional in the eyes of clients",
+			"fastTitle": "Fast",
+			"fastDesc": "Get a ready estimate in 5 minutes instead of hours of manual work",
+			"accurateTitle": "Accurate",
+			"accurateDesc": "We account for all development stages and provide realistic time and cost estimates",
+			"professionalTitle": "Professional",
+			"professionalDesc": "Results you're not ashamed to send to clients — structured and clear",
+			"howTitle": "How it works",
+			"step1": "Paste or upload requirements",
+			"step2": "Get an estimate",
+			"step3": "Edit and send to client",
+			"step1Desc": "Paste specification text or upload document",
+			"step2Desc": "Get a detailed estimate in minutes",
+			"step3Desc": "Edit and send to client"
+		},
+		"faq": {
+			"title": "Frequently asked questions",
+			"faq1Q": "Is the first estimate really free?",
+			"faq1A": "Yes, absolutely free. No registration, no card, no hidden conditions. Just paste your spec and get the result.",
+			"faq2Q": "Can I edit the finished estimate?",
+			"faq2A": "Of course! After receiving the result, you can edit any parameters: stages, hours, cost. It's your document.",
+			"faq3Q": "How is the estimate calculated?",
+			"faq3A": "We analyze your specification and based on experience from thousands of projects, determine work stages, time for each stage, and market cost.",
+			"faq4Q": "Can I download the estimate as PDF?",
+			"faq4A": "Yes, after registration you get access to download the estimate in PDF format without watermarks.",
+			"faq5Q": "What types of projects are supported?",
+			"faq5A": "We support web development, mobile apps, APIs, integrations, and most typical freelance development tasks.",
+			"faq6Q": "How to use the estimate in client negotiations?",
+			"faq6A": "The estimate serves as a basis for discussing scope of work. You can adjust rates and stages for specific clients."
+		},
+		"pricing": {
+			"pricing": "Pricing",
+			"pricingTitle": "Simple and honest pricing",
+			"pricingSubtitle": "Pay only for the number of estimates. No subscriptions, no hidden conditions. First estimate always free.",
+			"pricingFreeName": "Trial",
+			"pricingFreePrice": "$0",
+			"pricingFreeDesc": "Try for free",
+			"pricingFreeFeatures": {
+				"1": "1 estimate",
+				"2": "Basic calculation",
+				"3": "With watermark",
+				"4": "No PDF export"
+			},
+			"pricingFreeCTA": "Start free",
+			"pricingSmallName": "Starter pack",
+			"pricingSmallPrice": "$5",
+			"pricingSmallDesc": "For one-time projects",
+			"pricingSmallFeatures": {
+				"1": "3 estimates",
+				"2": "Detailed calculation",
+				"3": "No watermarks",
+				"4": "PDF export"
+			},
+			"pricingSmallCTA": "Buy",
+			"pricingLargeName": "Pro pack",
+			"pricingLargePrice": "$15",
+			"pricingLargeDesc": "For active freelancers",
+			"pricingLargeFeatures": {
+				"1": "10 estimates",
+				"2": "Priority support",
+				"3": "No watermarks",
+				"4": "Unlimited export"
+			},
+			"pricingLargeCTA": "Buy"
+		}
+	}
+}

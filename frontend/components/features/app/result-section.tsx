@@ -412,7 +412,7 @@ export function ResultSection({ onReset }: ResultSectionProps) {
 								{settings.riskBuffer > 0 && (
 									<tr>
 										<td className="py-2 pr-4 text-sm text-gray-500">
-											{t.riskBuffer} (+
+											{t("riskBuffer")} (+
 											{settings.riskBuffer}%)
 										</td>
 										<td></td>
@@ -499,7 +499,7 @@ export function ResultSection({ onReset }: ResultSectionProps) {
 
 				<div className="p-6 bg-linear-to-br from-gray-50 to-gray-100/50 rounded-xl border border-gray-200">
 					<div className="flex items-start gap-4">
-						<div className="w-14 h-18 bg-white rounded-lg border border-gray-200 flex-shrink-0 flex flex-col items-center justify-center shadow-sm p-2">
+						<div className="w-14 h-18 bg-white rounded-lg border border-gray-200 shrink-0 flex flex-col items-center justify-center shadow-sm p-2">
 							<FileText className="w-6 h-6 text-gray-400" />
 							<div className="mt-1 space-y-0.5 w-full">
 								<div className="h-0.5 bg-gray-200 rounded w-full" />

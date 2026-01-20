@@ -18,7 +18,7 @@ export default function ClientProviders({
 		trpc.createClient({
 			links: [
 				httpBatchLink({
-					url: `${process.env.NEXT_PUBLIC_BACKEND_URL}/trpc`,
+					url: `${process.env.NEXT_PUBLIC_BACKEND_API_URL}/trpc`,
 					transformer: SuperJSON,
 					fetch: (url, options) =>
 						fetch(url, { ...options, credentials: "include" }),

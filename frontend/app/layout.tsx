@@ -10,57 +10,69 @@ const geistFont = Geist({ subsets: ["latin", "cyrillic"] });
 const geistMonoFont = Geist_Mono({ subsets: ["latin", "cyrillic"] });
 
 export async function generateMetadata(): Promise<Metadata> {
-	const t = await getTranslations("metadata");
-	const locale = await getLocale();
+  const t = await getTranslations("metadata");
+  const locale = await getLocale();
 
-	return {
-		title: t("title"),
-		description: t("description"),
-		keywords: t("keywords")
-			.split(",")
-			.map((k) => k.trim()),
-		openGraph: {
-			title: t("title"),
-			description: t("description"),
-			siteName: "Smetamaker",
-			type: "website",
-			url: "https://smetamaker.com",
-			locale: locale === "ru" ? "ru_RU" : "en_US",
-			alternateLocale: ["ru_RU", "en_US"],
-		},
-		twitter: {
-			card: "summary_large_image",
-			title: t("title"),
-			description: t("description"),
-		},
-		metadataBase: new URL("https://smetamaker.com"),
-		robots: {
-			index: true,
-			follow: true,
-		},
-		alternates: {
-			canonical: "https://smetamaker.com",
-			languages: {
-				"ru-RU": "https://smetamaker.com",
-				"en-US": "https://smetamaker.com",
-				"x-default": "https://smetamaker.com",
-			},
-		},
-	};
+  return {
+    title: t("title"),
+    description: t("description"),
+    keywords: t("keywords")
+      .split(",")
+      .map((k) => k.trim()),
+    openGraph: {
+      title: t("title"),
+      description: t("description"),
+      siteName: "Smetamaker",
+      type: "website",
+      url: "https://smetamaker.com",
+      locale: locale === "ru" ? "ru_RU" : "en_US",
+      alternateLocale: ["ru_RU", "en_US"],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t("title"),
+      description: t("description"),
+    },
+    metadataBase: new URL("https://smetamaker.com"),
+    robots: {
+      index: true,
+      follow: true,
+    },
+    alternates: {
+      canonical: "https://smetamaker.com",
+      languages: {
+        "ru-RU": "https://smetamaker.com",
+        "en-US": "https://smetamaker.com",
+        "x-default": "https://smetamaker.com",
+      },
+    },
+    icons: [
+      {
+        rel: "icon",
+        url: "/favicon-light.ico",
+        media: "(prefers-color-scheme: light)",
+      },
+      {
+        rel: "icon",
+        url: "/favicon-dark.ico",
+        media: "(prefers-color-scheme: dark)",
+      },
+    ],
+  };
 }
 
 export default async function RootLayout({
-	children,
+  children,
 }: Readonly<{
-	children: React.ReactNode;
+  children: React.ReactNode;
 }>) {
-	const locale = await getLocale();
+  const locale = await getLocale();
 
-	return (
-		<html lang={locale}>
-			<body className={`font-sans antialiased`}>
-				<Providers>{children}</Providers>
-			</body>
-		</html>
-	);
+  return (
+    <html lang={locale}>
+      <body className={`font-sans antialiased`}>
+        <Providers>{children}</Providers>
+      </body>
+    </html>
+  );
 }
